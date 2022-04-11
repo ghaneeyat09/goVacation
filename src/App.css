@@ -1,38 +1,481 @@
-.App {
-  text-align: center;
+html{
+    --royalgold: #f5bd02;
+    --blue: rgb(2, 2, 42);
+    --blue2: rgb(84, 84, 215);
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.nav{
+    background-color: var(--blue);
+    width: 100%;
+    height: 80px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    justify-content: space-between;
+    z-index: 1;
+}
+.nav ul{
+    display: flex;
+    height: 100%;
+}
+.nav ul li{
+    list-style: none;
+    padding:0 20px;
+    font-size: 14px;
+    color: var(--royalgold);
+    text-transform: uppercase;
+    font-family: 'Padauk', sans-serif;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+    position: relative;
+    
+}
+.nav ul li:after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    display: block;
+    transition: all 0.3s ease-in-out;
+    bottom: 70%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.nav ul li:hover::after {
+    width: 70%;
+    height: 1px;
+    background-color: var(--royalgold);
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+.hmbm{
+    display: none;
+    color: var(--royalgold);
+    margin: 20px 25px 20px 20px;
+    font-size: 30px;
 }
+.logoContainer::after{
+    content: "GOVAC.";
+    color: var(--royalgold);
+    display: block;
+    margin-left: 45px;
+    font-family: 'Padauk', sans-serif;
+}
+.logo{
+    width: 60px;
+    height: 40px;
+    margin-left: 35px;
+}
+.body{
+    background-image: url("/public/assets/goimg13.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.sliderimg{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+.bodyContent{
+    position: absolute;
+    width: 100%;
+    top: 200px;
+    display: block;
+}
+.buttons{
+    display: block;
+    margin-left: 3%;
+}
+.buttons button{
+    background-color: var(--royalgold);
+    height: 40px;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    margin-top: 15px;
+    padding: 0 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.alice-carousel__dots{
+    position: absolute;
+    bottom: 30px;
+    right: 5%;
+}
+.alice-carousel__dots-item{
+    background-color: #f5bc02e5;
+}
+.form{
+   width: 94%;
+   height: 200px;
+   margin: auto;
+   position: relative;
+   margin-top: 50px;
+   -webkit-background-color: #f5bc0292; /*safari/chrome */
+   -moz-background-color: #f5bc0292; /*firefox */
+   -ms-background-color: #f5bc0292; /* */
+   -o-background-color: #f5bc0292; /*opera*/
+   background-color: var(--royalgold);
+   background-color:#f5bc02d8;
+}
+form{
+    width: 100%;
+    display: flex;
+    font-family: 'Padauk', sans-serif;
+    text-transform: capitalize;
+}
+form input{
+    cursor: pointer;
+}
+.where input, .when input, .who input{
+    height: 30px;
+    margin-top: 20px;
+    outline: none;
+}
+.who, .when, .where, .what{
+    width: 25%;
+}
+.when-when{
+    display: flex;
+}
+.when-when input{
+    width: 100%;
+}
+.where input{
+    width: 100%;
+}
+.block{
+    display: grid;
+    margin-right: 20px;
+}
+.what{
+    display: block;
+}
+.who input{
+    width: 50%;
+}
+.who-who{
+    display: flex;
+}
+form span{
+    color: var(--blue);
+    margin-right: 10px;
+}
+form h1{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+.img{
+    width: 100%;
+    height: 200px;
+}
+.card{
+    display: flex;
+    flex-wrap: wrap;
+    width: 97%;
+    margin: auto;
+    margin-top: 80px;
+}
+.cardCon{
+    width: 23%;
+    margin-right: 1%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    background-color: var(--royalgold);
+    height: 300px;
+}
+.textCon{
+    width: 200px;
+    margin: auto;
+    text-align: center;
+}
+.textCon p{
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    font-size: 15px;
+}
+.textCon button{
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+}
+.offers h1{
+    margin-left: 35px;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+hr{
+    margin: 40px 50px 40px 35px;
+}
+.imgCont{
+    overflow: hidden;
+}
+.destImg{
+    width: 100%;
+    height: 200px;
+    transition: transform 1.5s ease-in-out;
+}
+.destCon h1{
+    margin-left: 35px;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+.destWrapper{
+    width: 97%;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.dest{
+    width: 23%;
+    margin-right: .5%;
+    margin-left: 1%;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 1px solid rgb(213, 211, 211);
+    color: var(--blue);
+    cursor: pointer;
+    box-shadow: 5px 5px 10px 10px rgb(227, 225, 225);
+    margin-top: 30px;
+}
+.dest:hover{
+    background-color: var(--royalgold);
+    border: none;
+    transition: background-color 2s ease;
+}
+.dest:hover .destImg{
+    transform: scale(1.2);
+}
+.dest:hover .ship{
+    color: var(--blue)
+}
+.dest:hover .plane{
+    color: var(--blue)
+}
+.flex{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 10px;
+}
+.flex1{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.ship{
+    color: var(--royalgold);
+    margin-right: 10px;
+}
+.plane{
+    color: var(--royalgold);
+    margin-right: 10px;
+
+}
+.city{
+    font-family: "Sofia", sans-serif;
+    text-transform: capitalize;
+}
+.header{
+    width: 90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.header > h1, .header > p{
+    font-family: 'Padauk', sans-serif;
+    text-align: center;
+    color: var(--blue);
+
+}
+.header h1{
+    text-transform: capitalize;
+}
+.header p{
+    font-size: 18px;
+
+}
+.header .prosCon{
+    display: flex;
+    font-family: 'Padauk', sans-serif;
+    margin: 100px auto;
+}
+.header .prosCon .pros{
+    width: 30%;
+    padding: 0 50px;
+}
+.pros .icon{
+    width: 100%;
+    text-align: center;
+}
+.pros .icon i{
+    font-size: 60px;
+    color: var(--royalgold);
+}
+.footer{
+    width: 100%;
+    height: 150px;
+    background-color: var(--blue);
+    color: var(--royalgold);
+    display: block;
+}
+.brandicons{
+    font-size: 40px;
+    margin-top: 30px;
+}
+.brandClass{
+    display: flex;
+    justify-content: space-around;
+}
+.jdev{
+    font-size: 16px;
+    font-family: 'Padauk', sans-serif;
+    text-align: right;
+    margin-top: 50px;
+    margin-right: 6.5%;
+}
+#menu{
+    width: 200px;
+    position: fixed;
+    left: -300px;
+    top: 80px;
+    bottom: 0;
+    z-index: 1;
+    transition: transform 1s ease;
+    background-color: var(--blue);
+  }
+  #menu ul{
+    padding-right: 10px;
+  }
+  .menuHide{
+    transform: translateX(-300px);
+    
+  }
+  .menuShow{
+    transform: translateX(300px);
+  }
+#menu ul li{
+    list-style: none;
+    margin: 20px 0;
+    padding: 5px 5px;
+    color: var(--royalgold);
+    font-family: 'Padauk', sans-serif;
+    cursor: pointer;
+    transition: all .5s ease-in-out;
+}
+#menu ul li:hover{
+    background-color: var(--royalgold);
+    color: var(--blue);
+}
+
+@media screen and (max-width: 985px){
+   form{
+    font-size: 14px;
+   }
+   .nav ul{
+    display: none;
+    }
+   .hmbm{
+        display: block;
+    }
+}
+@media screen and (min-width:985px) {
+    #menu{
+        display: none;
+    }
+}
+@media screen and (max-width: 885px){
+    form{
+     font-size: 12px;
+    }
+    .cardCon{
+        width: 42%;
+        margin-right: 5%;
+        margin-left: 3%;
+    }
+    .dest{
+        width: 42%;
+        margin-right: 4%;
+        margin-left: 3%;
+    }
+ }
+ @media screen and (max-width: 785px){
+    .what, .where{
+        width: 21%;
+    }
+    .where input{
+        width: 80%;
+    }
+    .when{
+        width: 27%;
+    }
+ }
+ @media screen and (max-width: 725px){
+    .who{
+        display: none;
+    }
+    .where, .what{
+        width: 23%;
+        margin-right: 4%;
+    }
+    .when{
+        width: 40%;
+    }
+    .header .prosCon .pros h2{
+        font-size: 16px;
+    }
+    .header .prosCon .pros p{
+        font-size: 14px;
+    }
+    .pros .icon i{
+        font-size: 40px;
+    }
+ }
+ @media screen and (max-width: 600px){
+    .card{
+        display: block;
+    }
+    .cardCon{
+        width: 95%;
+        margin-bottom: 150px;
+    }
+    .img{
+        width: 100%;
+        height: 324px;
+    }
+    .destWrapper{
+        display: block;
+    }
+    .dest{
+        width: 93%;
+        margin-bottom: 50px;
+    }
+    .destImg{
+        width: 100%;
+        height: 300px;
+    }
+    .header .prosCon{
+        display: block;
+        text-align: center;
+    }
+    .header .prosCon .pros h2{
+        font-size: 32px;
+    }
+    .header .prosCon .pros p{
+        font-size: 16px;
+    }
+    .pros .icon i{
+        font-size: 50px;
+    }
+    .header .prosCon .pros{
+        width: 90%;
+        padding: 0 25px;
+    }
+    .destCon h1{
+        text-align: center;
+    }
+ }
+ 

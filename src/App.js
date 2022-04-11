@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import Body from "./components/Body";
+import Card from "./components/Card";
+import Destination from "./components/Destinations";
+import BookTravel from "./components/BookTravel";
+import Footer from "./components/Footer";
+import Menu from "./components/Menu";
+import { useState } from "react";
+import "./App.css";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+function App(){
+  const [stat, setStat] = useState(false);
+  const changeStat = () => {
+    setStat(!stat);
+  }
+  return(
+    <div>
+      <Body changeStat={changeStat}/>
+      <Card />
+      <Destination />
+      <BookTravel />
+      <Footer />
+      <Menu classname={stat? "menuShow": "menuHide"}/>
     </div>
-  );
+  )
 }
-
 export default App;
