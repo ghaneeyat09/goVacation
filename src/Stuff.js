@@ -95,7 +95,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goimg6.jpeg",
+      image: "./assets/goimg10.jpeg",
       city: "maldives",
       hotels: "500hotels",
       button: "view all",
