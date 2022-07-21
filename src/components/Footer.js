@@ -6,6 +6,7 @@ import { FaCcVisa} from "react-icons/fa";
 import {FaCcStripe} from "react-icons/fa";
 
 const Footer = () => {
+  const date = new Date();
     return(
         <div className="footer">
         <div className="brandClass">
@@ -17,7 +18,7 @@ const Footer = () => {
            <FaCcStripe className="brandicons"/>
         </div>
         <div>
-          <p className="jdev">&copy;Jdev.com 2022</p>
+          <p className="jdev">&copy;jamiu ganiyat {date.getFullYear()}</p>
         </div>
         </div>
     )

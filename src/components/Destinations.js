@@ -5,19 +5,20 @@ import { useState, useEffect } from 'react';
 import AOS from "aos";
 import "aos/dist/aos.css";
 const Destination = () => {
-const [filtered, setFiltered] = useState([]);
+// const [filtered, setFiltered] = useState([]);
 const [destinations, setDestinations] = useState([]);
-    let [inpValue, setInpValue] = useState("");
-   
+let [inpValue, setInpValue] = useState("");
 
     const handleChange = (e) => {
-    setInpValue(e.target.value);
-    console.log(inpValue);
-      const filt = Dests.filter((dest) => dest.city.includes(inpValue));
-      setFiltered(filt)
-     setDestinations([])
+        setInpValue(e.target.value)
     }
-
+   
+    useEffect(() => {
+        console.log(inpValue);
+        const filt = Dests.filter((dest) => dest.city.includes(inpValue.toLowerCase()));
+        console.log(filt)
+        setDestinations(filt)
+    }, [inpValue])
     useEffect(() => {
         setDestinations(Dests)
         AOS.init(
@@ -34,7 +35,6 @@ const [destinations, setDestinations] = useState([]);
             <input placeholder="look for the place to spend your next vacation" onChange={handleChange}  value={inpValue} type="text" style={{width: "83%", height: "25px", marginLeft: "35px", paddingLeft: "10px"}}/>
             <div className="destWrapper">
             {
-                inpValue.length === 0 &&
                 destinations.map( (dest, index) => {
                     return(
                         <div className="dest" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" key={index}>
@@ -54,7 +54,7 @@ const [destinations, setDestinations] = useState([]);
                 })
             }
 
-           { filtered &&
+           {/* { filtered &&
                  filtered.map( (dest, index) => {
                     return(
                         <div className="dest" data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="1000" key={index}>
@@ -72,7 +72,7 @@ const [destinations, setDestinations] = useState([]);
                         </div>
                     )
                 })
-            }
+            } */}
             </div>
         </div>
 

@@ -124,18 +124,18 @@ export const Dests = [
 export const Pros = [
   {
     icon: <FaCubes />,
-    title: "Tailormade Luxury Options",
-    text: 'Your personal travel specialist can take care of the details, no matter how small'
+    title: "Bespoke Luxury Options",
+    text: 'Vivamus molestie ligula ac ligula auctor suscipit. Fusce vulputate metus nibh, non euismod odio egestas et. Fusce auctor eros vel enim ultrices eleifend.'
   },
   {
     icon: <FaFire />,
-    title: "No Compromise on Quality",
-    text: "We push the limits when it comes to quality of service offered to our clients. We do not entertain average service!"
+    title: "High Quality Service",
+    text: "Vivamus molestie ligula ac ligula auctor suscipit. Fusce vulputate metus nibh, non euismod odio egestas et. Fusce auctor eros vel enim ultrices eleifend."
   },
   {
     icon: <FaGem />,
     title: "24/7 Support Helpdesk",
-    text: "We avail ourselves to your service 24/7, round the clock"
+    text: "Vivamus molestie ligula ac ligula auctor suscipit. Fusce vulputate metus nibh, non euismod odio egestas et. Fusce auctor eros vel enim ultrices eleifend."
   }
 ];
 
