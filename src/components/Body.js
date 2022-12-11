@@ -18,13 +18,14 @@ const Body =({changeStat}) => {
       };
     */
     return(
-        <div>
+        <div className="caro-cont">
             <AliceCarousel autoPlay autoPlayInterval="20000" infinite mouseTracking animationType='fadeout' disableButtonsControls animationEasingFunction="ease-in-out">
-            <img src="./assets/goImg4.jpeg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
-            <img src="./assets/goimg13.jpeg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
-            <img src="./assets/goImg14.jpeg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
-            <img src="./assets/goImg16.jpeg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
-            <img src="./assets/goImg15.jpeg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
+            <img src="./assets/tour56.jpg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
+            <img src="./assets/tour55.jpg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
+            <img src="./assets/tour57.jpg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
+            <img src="./assets/tour54.jpg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
+            <img src="./assets/tour53.jpg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
+            <img src="./assets/tour50.jpg" className="sliderimg" alt="" onDragStart={handleDragStart}/>
             </AliceCarousel>
             <Nav changeStat={changeStat}/>
             <BodyContent />

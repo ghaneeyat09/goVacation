@@ -32,7 +32,7 @@ let [inpValue, setInpValue] = useState("");
     return(
         <div className="destCon">
             <h1 data-aos="fade-up" data-aos-easing="ease-in-out" data-aos-duration="500">top destinations around the world</h1>
-            <input placeholder="look for the place to spend your next vacation" onChange={handleChange}  value={inpValue} type="text" style={{width: "83%", height: "25px", marginLeft: "35px", paddingLeft: "10px"}}/>
+            <input placeholder="look for the place to spend your next vacation" onChange={handleChange}  value={inpValue} type="text" className="dest-input"/>
             <div className="destWrapper">
             {
                 destinations.map( (dest, index) => {

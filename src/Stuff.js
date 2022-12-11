@@ -1,21 +1,21 @@
 import {FaCubes} from "react-icons/fa";
-import { FaFire } from "react-icons/fa";
 import { FaGem } from "react-icons/fa";
+import {FaGoogleDrive} from "react-icons/fa"
 
 export const Data = [
-  {image: "./assets/goimg13.jpeg",
+  {image: "./assets/tour26.jpg",
    text: "winter beach escapes. 30% off",
    button: "explore our deals"
   },
-  {image: "./assets/goimg12.jpeg",
+  {image: "./assets/tour3.jpg",
    text: "spend new year's eve in paris",
    button: "explore our deals"
   },
-  {image: "./assets/goImg16.jpeg",
+  {image: "./assets/tour27.jpg",
    text: "skiing weekends in the alpes",
    button: "explore our deals"
   },
-  {image: "./assets/goimg5.jpeg",
+  {image: "./assets/tour13.jpg",
    text: "our weekly top offer: Thailand",
    button: "explore our deals"
   }
@@ -23,7 +23,7 @@ export const Data = [
 
 export const Dests = [
     {
-      image: "./assets/goimg13.jpeg",
+      image: "./assets/tour1.jpg",
       city: "paris",
       hotels: "500hotels",
       button: "view all",
@@ -31,7 +31,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg2.jpeg",
+      image: "./assets/tour10.jpg",
       city: "amsterdam",
       hotels: "500hotels",
       button: "view all",
@@ -39,7 +39,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg3.jpeg",
+      image: "./assets/tour15.jpg",
       city: "maldives",
       hotels: "500hotels",
       button: "view all",
@@ -47,7 +47,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg22.jpeg",
+      image: "./assets/tour12.jpg",
       city: "amsterdam",
       hotels: "500hotels",
       button: "view all",
@@ -55,7 +55,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg21.jpeg",
+      image: "./assets/tour14.jpg",
       city: "paris",
       hotels: "500hotels",
       button: "view all",
@@ -63,7 +63,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg19.jpeg",
+      image: "./assets/tour18.jpg",
       city: "seoul",
       hotels: "500hotels",
       button: "view all",
@@ -71,7 +71,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goimg17.jpeg",
+      image: "./assets/tour35.jpg",
       city: "saint petersburg",
       hotels: "500hotels",
       button: "view all",
@@ -79,7 +79,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg16.jpeg",
+      image: "./assets/tour23.jpg",
       city: "italy",
       hotels: "500hotels",
       button: "view all",
@@ -87,7 +87,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goImg14.jpeg",
+      image: "./assets/tour33.jpg",
       city: "prague",
       hotels: "500hotels",
       button: "view all",
@@ -95,7 +95,7 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goimg10.jpeg",
+      image: "./assets/tour19.jpg",
       city: "maldives",
       hotels: "500hotels",
       button: "view all",
@@ -103,16 +103,80 @@ export const Dests = [
       plane: "$100"
     },
     {
-      image: "./assets/goimg12.jpeg",
-      city: "saint petersburg",
+      image: "./assets/tour36.jpg",
+      city: "santorini",
       hotels: "500hotels",
       button: "view all",
       ship: "$70",
       plane: "$100"
     },
     {
-      image: "./assets/goImg11.jpeg",
-      city: "prague",
+      image: "./assets/tour7.jpg",
+      city: "neitherlands",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour9.jpg",
+      city: "seoul",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour6.jpg",
+      city: "london",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour5.jpg",
+      city: "birmingham",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour22.jpg",
+      city: "egypt",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour37.jpg",
+      city: "amsterdam",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour38.jpg",
+      city: "maldives",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour34.jpg",
+      city: "seoul",
+      hotels: "500hotels",
+      button: "view all",
+      ship: "$70",
+      plane: "$100"
+    },
+    {
+      image: "./assets/tour31.jpg",
+      city: "neitherlands",
       hotels: "500hotels",
       button: "view all",
       ship: "$70",
@@ -128,12 +192,12 @@ export const Pros = [
     text: 'Vivamus molestie ligula ac ligula auctor suscipit. Fusce vulputate metus nibh, non euismod odio egestas et. Fusce auctor eros vel enim ultrices eleifend.'
   },
   {
-    icon: <FaFire />,
+    icon: <FaGem />,
     title: "High Quality Service",
     text: "Vivamus molestie ligula ac ligula auctor suscipit. Fusce vulputate metus nibh, non euismod odio egestas et. Fusce auctor eros vel enim ultrices eleifend."
   },
   {
-    icon: <FaGem />,
+    icon: <FaGoogleDrive/>,
     title: "24/7 Support Helpdesk",
     text: "Vivamus molestie ligula ac ligula auctor suscipit. Fusce vulputate metus nibh, non euismod odio egestas et. Fusce auctor eros vel enim ultrices eleifend."
   }

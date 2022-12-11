@@ -8,6 +8,9 @@ body{
     margin: 0;
     padding: 0;
 }
+.caro-cont{
+    width: 100%;
+}
 .nav{
     background-color: var(--blue);
     width: 100%;
@@ -70,7 +73,7 @@ body{
     margin-left: 35px;
 }
 .body{
-    background-image: url("/public/assets/goimg13.jpeg");
+    /* background-image: url("/public/assets/goimg13.jpeg"); */
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -196,7 +199,7 @@ form h1{
     text-align: center;
 }
 .textCon p{
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: capitalize;
     font-size: 15px;
 }
@@ -241,7 +244,7 @@ hr{
     border: 1px solid rgb(213, 211, 211);
     color: var(--blue);
     cursor: pointer;
-    box-shadow: 5px 5px 10px 10px rgb(227, 225, 225);
+    box-shadow: 5px 5px 5px 5px rgb(227, 225, 225);
     margin-top: 30px;
 }
 .dest:hover{
@@ -267,6 +270,9 @@ hr{
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.flex2 span{
+    font-family: "Raleway", sans-serif;
+}
 .ship{
     color: var(--royalgold);
     margin-right: 10px;
@@ -278,6 +284,7 @@ hr{
 }
 .city{
     font-family: "Sofia", sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-transform: capitalize;
 }
 .header{
@@ -326,17 +333,23 @@ hr{
     font-size: 40px;
     margin-top: 30px;
 }
+.dest-input{
+   width: 83%;
+   height: 25px;
+   margin-left: 35px;
+   padding-left: 10px;
+}
 .brandClass{
     display: flex;
     justify-content: space-around;
 }
 .jdev{
     font-size: 16px;
-    font-family: 'Padauk', sans-serif;
+    font-family: 'Raleway', sans-serif;
     text-align: right;
     margin-top: 50px;
     margin-right: 6.5%;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 #menu{
     width: 200px;
@@ -436,6 +449,9 @@ hr{
     }
  }
  @media screen and (max-width: 600px){
+    .sliderimg{
+        width: 100%;
+    }
     .card{
         display: block;
     }
@@ -456,7 +472,7 @@ hr{
     }
     .destImg{
         width: 100%;
-        height: 300px;
+        height: 250px;
     }
     .header .prosCon{
         display: block;
@@ -473,10 +489,27 @@ hr{
     }
     .header .prosCon .pros{
         width: 90%;
-        padding: 0 25px;
+        padding: 0;
+        margin: auto;
     }
     .destCon h1{
         text-align: center;
+    }
+ }
+ @media screen and (max-width:400px){
+    .dest-input{
+        width: 80%;
+        margin-left: 15px;
+        padding-left: 0;
+    }
+    .destCon h1{
+        font-size: 25px;
+        margin-left: 0;
+        margin-right: 0;
+        text-align: center;
+    }
+    .holi-btn{
+        text-align: left;
     }
  }
  

@@ -18,7 +18,7 @@ const Footer = () => {
            <FaCcStripe className="brandicons"/>
         </div>
         <div>
-          <p className="jdev">&copy;jamiu ganiyat {date.getFullYear()}</p>
+          <p className="jdev">&copy;developed by Jamiu Ganiyat {date.getFullYear()}</p>
         </div>
         </div>
     )

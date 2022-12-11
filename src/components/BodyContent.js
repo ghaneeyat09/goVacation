@@ -23,7 +23,8 @@ const BodyContent = () => {
                <button data-aos="fade-up"
                data-aos-easing="ease-in-out"
                data-aos-duration="2000"
-               data-aos-delay="3000"
+               data-aos-delay="3000" 
+               className="holi-btn"
                >April 2022 holiday offers 50% off all unique opportunities to realize your dream</button>
             </div> 
             <div className="form" data-aos="fade-up"
