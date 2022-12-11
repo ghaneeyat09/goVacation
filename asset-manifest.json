@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/goVacation/static/css/main.6d7f3a80.css",
+    "main.js": "/goVacation/static/js/main.bd63678f.js",
+    "static/js/787.2a253a91.chunk.js": "/goVacation/static/js/787.2a253a91.chunk.js",
+    "index.html": "/goVacation/index.html",
+    "main.6d7f3a80.css.map": "/goVacation/static/css/main.6d7f3a80.css.map",
+    "main.bd63678f.js.map": "/goVacation/static/js/main.bd63678f.js.map",
+    "787.2a253a91.chunk.js.map": "/goVacation/static/js/787.2a253a91.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6d7f3a80.css",
+    "static/js/main.bd63678f.js"
+  ]
+}
